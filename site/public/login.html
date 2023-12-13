@@ -11,37 +11,41 @@
     <script src="./js/sessao.js"></script>
 
     <link rel="icon" href="./assets/icon/favicon2.png">
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+<style>
+      body{
+        background-image: url(assets/imgs/background.jpg);
+        background-size: cover;
+        background-position: center;
+      }
 
+      footer{
+        position: absolute;
+        background-color: black;
+        bottom: 0;
+      }
+</style>
 <body>
 
     <!--Header-->
 
-    <div class="header">
-        <div class="container">
-            <h1 class="titulo">AquaTech</h1>
-            <ul class="navbar">
-                <li>
-                    <a href="index.html">Inicial</a>
-                </li>
-                <li>
-                    <a href="simulador.html">Simulador</a>
-                </li>
-                <li>|</li>
-                <li class="agora">
-                    <a href="#">Login</a>
-                </li>
-                <li>
-                    <a href="cadastro.html">Cadastro</a>
-                </li>
-            </ul>
+    <header>
+        <img src="assets/icon/favicon2.png">
+        <a href="#about">Sobre nós</a>
+        <a href="simulador.html">simulador</a>
+        <div class="btnLogin" id="btnLoginBc">
+          <a href="cadastro.html" onmouseover="anim(2);" onmouseout="anim(0)">Cadastro</a>
+          <span>/</span>
+          <a href="login.html" onmouseover="anim(1);" onmouseout="anim(0)">Login</a>
         </div>
-    </div>
+      </header>
+    
 
 
     <div class="login">
@@ -74,18 +78,28 @@
         </div>
     </div>
 
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por aluno &hearts; SPTech &copy; 2023</h4>
-            <span class="version">v1.0.0</span>
-        </div>
-    </div>
-    <!--footer fim-->
+    <footer>Desenvolvido por 1ASDA grupo 3 SPTECH</footer>
 
 </body>
 
 </html>
+
+<script> /* anim */
+
+    function anim(x) {
+      switch (x) {
+        case 0:
+          btnLoginBc.style.backgroundColor = "#630B0B";
+          break;
+        case 1:
+          btnLoginBc.style.backgroundColor = "#22630B";
+          break;
+        case 2:
+          btnLoginBc.style.backgroundColor = "#AE2626";
+          break;
+      }
+    }
+  </script>
 
 <script>
 
