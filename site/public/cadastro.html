@@ -57,9 +57,9 @@
                          Assim que inserir vá para o script abaixo.
                      -->
           <div class="campo">
-            <span>Galeria:</span>
-            <select name="Galeria" id="listaGalerias">
-              <option selected>Selecione uma Galeria</option>
+            <span>Empresa:</span>
+            <select name="empresas" id="listaEmpresas">
+              <option selected>Selecione uma empresa</option>
             </select>
           </div>
           <div class="campo">
@@ -111,17 +111,13 @@
     var emailVar = email_input.value;
     var senhaVar = senha_input.value;
     var confirmacaoSenhaVar = confirmacao_senha_input.value;
-    var galeriaVar = listaGalerias.value;
-    if(nomeVar.length > 1 || emailVar.indexof('@', '.')){
-
-    }
-
+    var empresaVar = listaEmpresas.value
     if (
       nomeVar == "" ||
       emailVar == "" ||
       senhaVar == "" ||
       confirmacaoSenhaVar == "" ||
-      galeriaVar == ""
+      empresaVar == ""
     ) {
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
@@ -134,7 +130,7 @@
     }
 
     // Enviando o valor da nova input
-    fetch("/usuario/cadastrar", {
+    fetch("/usuarios/cadastrar", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -145,7 +141,7 @@
         nomeServer: nomeVar,
         emailServer: emailVar,
         senhaServer: senhaVar,
-        galeriaServer: galeriaVar
+        empresaServer: empresaVar
       }),
     })
       .then(function (resposta) {
@@ -176,13 +172,13 @@
   }
 
   function listar() {
-    fetch("/galeria/listar", {
+    fetch("/empresas/listar", {
       method: "GET",
     })
       .then(function (resposta) {
-        resposta.json().then((galerias) => {
-          galerias.forEach((galeria) => {
-            listaGalerias.innerHTML += `<option value='${galeria.id}'>${galeria.cnpj}</option>`;
+        resposta.json().then((empresas) => {
+          empresas.forEach((empresa) => {
+            listaEmpresas.innerHTML += `<option value='${empresa.id}'>${empresa.cnpj}</option>`;
           });
         });
       })

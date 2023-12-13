@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Art aTech - Home</title>
+
+  <script src="./js/sessao.js"></script>
+
+  <link rel="icon" href="./assets/icon/favicon2.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> -->
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
+  <header>
+    <img src="assets/icon/favicon2.png">
+    <a href="#about">Sobre nós</a>
+    <a href="simulador.html">simulador</a>
+    <div class="btnLogin" id="btnLoginBc">
+      <a href="cadastro.html" onmouseover="anim(2);" onmouseout="anim(0)">Cadastro</a>
+      <span>/</span>
+      <a href="login.html" onmouseover="anim(1);" onmouseout="anim(0)">Login</a>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="bannerLeft">
+      <p>Cada obra é mais do que uma criação.</p>
+      <p>É uma experiência tangível que ecoa a excelência artística.</p>
+    </div>
+    <img src="assets/imgs/banner-front.png">
+  </div>
+
+
+
+
+  <main>
+    <div id="about">
+      <div>
+        <h1>Iluminando a Arte com Tecnologia de Vanguarda</h1>
+        <p>
+          Na Art aTech, fundimos a arte com a inovação tecnológica para preservar e aprimorar a beleza das galerias de
+          arte em todo o mundo. Nossa empresa se dedica a proporcionar soluções de monitoramento de temperatura e
+          iluminosidade que garantem a preservação ideal das preciosidades artísticas.
+          <br>
+          <br>
+          Compreendemos a importância de manter as condições perfeitas para a exibição de obras de arte. É por isso que
+          desenvolvemos sistemas avançados que monitoram meticulosamente a temperatura e a iluminação dos espaços
+          expositivos. Através da nossa tecnologia de ponta, oferecemos aos curadores, galeristas e colecionadores a
+          tranquilidade de saber que suas obras de arte estão protegidas contra variações ambientais indesejadas.</p>
+      </div>
+      <img src="assets/imgs/main1.jpg">
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/imgs/card01.png" alt="Galeria de arte bem iluminada e monitorada pela a Art aTech">
+        <p>Nossa tecnologia mantém as condições ideais para a preservação de obras de arte preciosas, assegurando sua beleza para as gerações futuras.</p>
+      </div>
+      <div class="card">
+        <img src="assets/imgs/card02.png" alt="Monitor na dashboard Art aTech">
+        <p>Nossos sistemas avançados monitoram a temperatura e iluminação em galerias de arte, garantindo condições ambientais estáveis para a preservação da arte.</p>
+      </div>
+      <div class="card">
+        <img src="assets/imgs/card03.png" alt="">
+        <p>Descubra como nossa inovação tecnológica eleva a preservação e a apreciação da arte, garantindo condições ambientais ideais para sua exibição.</p>
+      </div>
+    </div>
+
+    <img src="assets/imgs/logo.jpg" alt="Art aTech" class="logo">
+  </main>
+
+
+
+
+
+  <footer>Desenvolvido por 1ASDA grupo 3 SPTECH</footer>
+
+  <script> /* anim */
+
+    function anim(x) {
+      switch (x) {
+        case 0:
+          btnLoginBc.style.backgroundColor = "#630B0B";
+          break;
+        case 1:
+          btnLoginBc.style.backgroundColor = "#22630B";
+          break;
+        case 2:
+          btnLoginBc.style.backgroundColor = "#AE2626";
+          break;
+      }
+    }
+  </script>
 </body>
+
 </html>

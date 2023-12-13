@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    color: unset;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*::selection {
+    background-color: cyan;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    padding: 5px 5%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -1px;
+    color: white;
+    position: fixed;
+    z-index: 10;
+    /* header sobreposição */
+}
+
+header>a {
+    margin: 0 40px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+header>img {
+    margin-right: 2 5px;
+    border-radius: 5px;
+}
+
+header .btnLogin {
+    margin-top: 20px;
+    background-color: #630B0B;
+    width: 240px;
+    padding: 20px;
+    position: absolute;
+    right: 5%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: 500ms;
+}
+
+/* */
+
+.banner {
+    background-image: url(assets/imgs/banner-back.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.9em;
+    align-items: center;
+}
+
+.bannerLeft {
+    width: 500px;
+    margin-left: 10%;
+    line-height: 1.7em;
+}
+
+.bannerLeft p {
+    font-family: 'Lilita One', sans-serif;
+    margin-bottom: 20px;
+}
+
+.bannerLeft p:nth-child(2) {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner>img {
+    position: absolute;
+    right: 0;
+}
+
+/* */
+footer {
+    color: wheat;
+    padding: 10px 35px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid white;
+    cursor: pointer;
+}
+
+/* */
+
+main {
+    width: 100%;
+    background-color: white;
+    padding: 20px 5%;
+}
+
+h1 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 1.9em;
+    margin-bottom: 30px;
+}
+
+#about {
+    font-size: 1.1em;
+    width: 100%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#about img {
+    margin-left: 100px;
+    width: 45%;
+    border-radius: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 10%;
+    margin: 90px 0;
+}
+
+.card {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.403);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.card:hover{
+    border: 1px solid rgba(0, 0, 0, 0.815);
+    background-color: rgba(137, 43, 226, 0.083);
+    transform: scale(1.1);
+}
+
+.card>img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.logo{
+    margin: 100px auto;
+    display: block;
+    width: 300px;
+}
+
+
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
