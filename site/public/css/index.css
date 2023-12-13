@@ -23,44 +23,6 @@ body {
     background-color: black;
 }
 
-header {
-    width: 100%;
-    padding: 5px 5%;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: -1px;
-    color: white;
-    position: fixed;
-    z-index: 10;
-    /* header sobreposição */
-}
-
-header>a {
-    margin: 0 40px;
-    font-size: 1.4em;
-    text-transform: uppercase;
-}
-
-header>img {
-    margin-right: 2 5px;
-    border-radius: 5px;
-}
-
-header .btnLogin {
-    margin-top: 20px;
-    background-color: #630B0B;
-    width: 240px;
-    padding: 20px;
-    position: absolute;
-    right: 5%;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 1.3em;
-    transition: 500ms;
-}
 
 /* */
 
@@ -99,14 +61,7 @@ header .btnLogin {
 }
 
 /* */
-footer {
-    color: wheat;
-    padding: 10px 35px;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid white;
-    cursor: pointer;
-}
+
 
 /* */
 

@@ -7,138 +7,72 @@ body {
   background-color: black;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  display: flex;
-}
-
-.header {
-  border-bottom: 3px solid #32b9cd;
-}
-
-.header .container {
-  justify-content: space-between;
-}
-
-.header a {
-  text-decoration: none;
-  color: #e3b062;
-}
-
-.agora {
-  font-weight: 800;
-}
-
-.navbar {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  color: #e3b062;
-}
-
-
-.titulo {
-  color: #32b9cd;
-  width: fit-content;
-  font-weight: 500;
-}
-
-
-/* BANNER */
-
-.banner {
-  height: fit-content;
-  padding: 40px 0;
-  color: white;
-  background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
-  background-size: cover;
-}
-
-.banner .container {
-  height: 400px;
-  font-size: 36px;
-  justify-content: center;
-  align-items: center;
-}
-
-.tamanho-conteudo { 
-  height: fit-content !important;
-}
-
-.banner p {
-  width: 50%;
+* {
   margin: 0;
-  padding: 0;
-  width: 280px;
-  font-size: 36px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  color: unset;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.banner .container span {
-  font-weight: 800;
-}
+header {
+  width: 100%;
+  padding: 5px 5%;
 
-/* missao visao valores */
-
-.social {
-  background-color: #e5e5e5;
   display: flex;
-}
-
-.social .container{
-  justify-content: center;
-}
-
-.box img {
-  width: 170px;
-}
-
-.social .container .boxes {
-  display: flex;
-}
-
-.social p {
-  text-align: center;
-}
-
-.box {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  letter-spacing: -1px;
+  color: white;
+  position: fixed;
+  z-index: 10;
+  /* header sobreposição */
 }
 
-/* FOOTER */
+header>a {
+  margin: 0 40px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
 
-.footer {
-  background-color: #32b9cd;
-  height: 150px;
-  color: #fff;
+header>img {
+  margin-right: 2 5px;
+  border-radius: 5px;
+}
+
+header .btnLogin {
+  margin-top: 20px;
+  background-color: #630B0B;
+  width: 240px;
+  padding: 20px;
+  position: absolute;
+  right: 5%;
   display: flex;
-  font-size: 15px;
+  justify-content: space-between;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.3em;
+  transition: 500ms;
 }
-
-.footer .container {
-  justify-content: center;
+/* */
+footer {
+  color: wheat;
+  padding: 10px 35px;
+  width: 100%;
   text-align: center;
+  border-top: 1px solid white;
+  cursor: pointer;
 }
-
-.footer .container .version {
-  font-size: 12px;
-}
-
 
 /* LOGIN */
-
-.banner .container .card {
+ .container .card {
   background-color: #e5e5e5;
+  padding: 20px;
   height: fit-content;
   width: 400px;
   display: flex;
   flex-direction: column;
-  color: palevioletred;
+  color: rgb(32, 184, 144);
   align-items: center;
   border-radius: 4px;
 }
@@ -178,7 +112,7 @@ button {
   width: 230px;
   position: fixed;
   border-radius: 4px;
-  border: #e6005a 3px solid;
+  border: #00a9e6 3px solid;
   padding: 10px;
   margin-right: 10%;
 }
@@ -214,7 +148,7 @@ input {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
+  background-color: #630B0B;
   width: 120px;
   align-self: center;
   margin-top: 5px;
@@ -292,7 +226,7 @@ input {
 .btn-nav {
   width: 40%;
   color: white;
-  background-color: #e6005a;
+  background-color: #630B0B;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
@@ -301,14 +235,14 @@ input {
 .btn-nav-white {
   width: 40%;
   background-color: white;
-  border: 3px solid #e6005a;
+  border: 3px solid #630B0B;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-  color: #e6005a;
+  color: #630B0B;
   padding: 0;
   margin: 0;
 }
